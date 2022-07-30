@@ -1,0 +1,18 @@
+// helper classes
+.container {
+	max-width: 1163px;
+	margin: auto;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+%flex-ac-jsb {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+%flex-ac {
+	display: flex;
+	align-items: center;
+}

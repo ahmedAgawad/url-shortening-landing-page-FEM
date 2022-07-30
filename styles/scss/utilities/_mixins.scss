@@ -1,0 +1,6 @@
+// mixins
+@mixin max($width) {
+	@media (max-width: $width) {
+		@content;
+	}
+}

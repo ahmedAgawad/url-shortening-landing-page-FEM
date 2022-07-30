@@ -1,0 +1,136 @@
+/* header */
+.header {
+	padding: 48px 0px 40px 0px;
+
+	.container {
+		@extend %flex-ac;
+	}
+
+	&__logo {
+		margin-right: 47.5px;
+	}
+
+	&__hamburgerBtn {
+		display: none;
+	}
+
+	&__nav {
+		flex: 1;
+		@extend %flex-ac-jsb;
+
+		&--open {
+			opacity: 0;
+		}
+	}
+
+	&__links {
+		list-style: none;
+	}
+
+	&__item {
+		display: inline-block;
+		margin-right: 27.5px;
+	}
+
+	&__link {
+		text-decoration: none;
+		font-weight: 700;
+		color: $grayish-violet;
+		font-size: 0.95rem;
+		transition: $color-transition;
+
+		&:hover {
+			color: $dark-violet;
+		}
+
+		&--login {
+			margin-right: 36px;
+		}
+	}
+
+	&__signup {
+		width: 106px;
+		height: 41px;
+		border-radius: 25px;
+		font-size: 0.95rem;
+	}
+
+	// Responsive media
+	@include max(800px) {
+		.container {
+			justify-content: space-between;
+			position: relative;
+		}
+
+		&__hamburgerBtn {
+			display: block;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			font-size: 1.6rem;
+			color: $grayish-violet;
+		}
+
+		&__nav {
+			position: absolute;
+			background-color: $dark-violet;
+			flex-direction: column;
+			visibility: hidden;
+			right: 24px;
+			left: 24px;
+			top: 57.5px;
+			z-index: -1;
+			padding: 40px 23px 30px 23px;
+			border-radius: 10px;
+			opacity: 0;
+			transition: $opacity-transition;
+
+			&--open {
+				visibility: visible;
+				opacity: 1;
+				z-index: 2;
+			}
+		}
+
+		&__links {
+			width: 100%;
+			text-align: center;
+			border-bottom: 1px solid $light-violet;
+			margin-bottom: 40px;
+		}
+
+		&__item {
+			display: block;
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
+
+		&__link {
+			color: $white;
+			font-size: 1.1rem;
+			transition: $color-transition;
+			display: block;
+
+			&:hover {
+				color: $cyan;
+			}
+
+			&--login {
+				text-align: center;
+				margin-right: 0;
+				margin-bottom: 30px;
+			}
+		}
+
+		&__cta {
+			width: 100%;
+			text-align: center;
+		}
+
+		&__signup {
+			max-width: 250px;
+			width: 100%;
+		}
+	}
+
+}

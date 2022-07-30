@@ -1,0 +1,16 @@
+// colors
+$white: hsl(0, 0%, 100%);
+$cyan: hsl(180, 66%, 49%);
+$gray: hsl(0, 0%, 75%);
+$grayish-violet: hsl(257, 7%, 63%);
+$light-cyan: hsl(178deg 57% 75%);
+$red: hsl(0, 87%, 67%);
+$light-violet: hsl(256, 18%, 35%);
+$dark-violet: hsl(257, 27%, 26%);
+$very-dark-blue: hsl(255, 11%, 22%);
+$very-dark-violet: hsl(260, 8%, 14%);
+
+// transitions
+$background-transition: background-color 200ms ease-in-out;
+$color-transition: color 200ms ease-in-out;
+$opacity-transition: opacity 300ms ease-in-out;

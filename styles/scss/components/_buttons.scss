@@ -1,0 +1,34 @@
+// button componenet
+.btn {
+	background-color: $cyan;
+	color: $white;
+	text-decoration: none;
+	text-align: center;
+	border: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	transition: $background-transition;
+
+	&:hover {
+		background-color: $light-cyan;
+		cursor: pointer;
+	}
+}
+
+
+.btn-getStarted {
+	width: 195px;
+	height: 56.5px;
+	font-size: 1.2rem;
+	border-radius: 30px;
+}
+
+@include max(710px) {
+	.btn-getStarted {
+		height: 50px;
+		font-size: 1.1rem;
+	}
+}
+
