@@ -1,0 +1,245 @@
+// short link section
+.short {
+	background-color: $light-gray;
+	padding: 110px 0px 62.5px 0px;
+
+	.container {
+		position: relative;
+	}
+
+	&__form {
+		@extend %flex-ac-jsb;
+		background-color: $dark-violet;
+		background-image: url("../../../images/bg-shorten-desktop.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 50px 65px;
+		border-radius: 10px;
+		position: absolute;
+		width: calc(100% - 48px);
+		top: -190px;
+	}
+
+	&__input,
+	&__submit {
+		height: 65px;
+	}
+
+	&__input {
+		flex: 1;
+		padding: 3px 30px 0px;
+		border-radius: 11px;
+		border: none;
+		outline: none;
+		color: $dark-violet;
+		font-size: 1.2rem;
+
+		&::placeholder {
+			color: $grayish-violet;
+		}
+
+		&:focus {
+			outline: 3px solid $cyan;
+		}
+
+		&--error {
+			border: 3px solid $red;
+
+			&::placeholder {
+				color: $very-light-red;
+			}
+
+			&:focus {
+				outline: none;
+			}
+
+			+ .short__error {
+				display: block;
+			}
+		}
+	}
+
+	&__error {
+		position: absolute;
+		bottom: 16px;
+		font-style: italic;
+		color: $light-red;
+		font-size: 1rem;
+		display: none;
+	}
+
+	&__submit {
+		margin-left: 25px;
+		width: 190px;
+		border-radius: 11px;
+		font-size: 1.2rem;
+	}
+
+	&__link {
+		background-color: $white;
+		@extend %flex-ac-jsb;
+		padding: 15px 25px 14.5px 30px;
+		border-radius: 5px;
+		margin-bottom: 15px;
+	}
+
+	&__linkText,
+	&__shortened {
+		font-size: 1.245rem;
+		font-weight: 500;
+		text-decoration: none;
+		letter-spacing: -1px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	&__linkText {
+		max-width: 350px;
+	}
+
+	&__cta {
+		@extend %flex-ac;
+	}
+
+	&__shortened {
+		color: $cyan;
+		margin-right: 25px;
+		max-width: 220px;
+	}
+
+	&__copy {
+		width: 102.5px;
+		height: 40px;
+		border-radius: 5px;
+
+		&--copied {
+			background-color: $dark-violet;
+
+			&:hover {
+				background-color: $dark-violet;
+			}
+		}
+	}
+
+	@include max(1000px) {
+		&__form {
+			padding: 45px;
+		}
+
+		&__input {
+			font-size: 1.1rem;
+		}
+	}
+
+	@include max(900px) {
+		padding: 80px 0px 60px 0px;
+
+		&__form {
+			padding: 35px;
+			top: -150px;
+		}
+
+		&__input,
+		&__submit {
+			height: 56.5px;
+		}
+
+		&__error {
+			bottom: 10px;
+		}
+
+		&__submit {
+			font-size: 1.2rem;
+		}
+
+		&__link {
+			flex-direction: column;
+			align-items: stretch;
+			padding: 22.5px;
+		}
+
+		&__linkText {
+			width: 100%;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			max-width: 100%;
+			border-bottom: 2px solid $light-gray;
+		}
+
+		&__cta {
+			justify-content: space-between;
+		}
+
+		&__copy {
+			width: 170px;
+		}
+	}
+
+	@include max(750px) {
+		padding: 100px 0px 60px 0px;
+
+		&__form {
+			flex-direction: column;
+			align-items: stretch;
+			justify-content: initial;
+			background-image: url("../../../images/bg-shorten-mobile.svg");
+			background-size: initial;
+			background-position: top right;
+			top: -185.5px;
+			padding: 20px;
+		}
+
+		&__input,
+		&__submit {
+			flex-basis: 49px;
+			border-radius: 5px;
+			width: 100%;
+			margin-left: 0;
+		}
+
+		&__input {
+			margin-bottom: 25px;
+			padding-left: 15px;
+			font-size: 1rem;
+		}
+
+		&__error {
+			bottom: 88.5px;
+			font-size: 0.895rem;
+		}
+
+		&__submit {
+			font-size: 0.975rem;
+		}
+
+		&__link {
+			padding: 16px 22px;
+		}
+
+		&__linkText {
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+		}
+
+		&__linkText, &__shortened {
+			font-size: 1rem;
+		}
+
+		&__cta {
+			flex-direction: column;
+			align-items: stretch;
+		}
+
+		&__shortened {
+			max-width: 100%;
+			width: 100%;
+			margin: 0px 0px 15px 0px;
+		}
+
+		&__copy {
+			width: 100%;
+			font-size: 1rem;
+		}
+	}
+}
