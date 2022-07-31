@@ -416,6 +416,9 @@ h3 {
   border-radius: 5px;
   margin-bottom: 15px;
 }
+.short__link:last-of-type {
+  margin-bottom: 0px;
+}
 .short__linkText, .short__shortened {
   font-size: 1.245rem;
   font-weight: 500;
