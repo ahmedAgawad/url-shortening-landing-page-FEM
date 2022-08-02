@@ -1,0 +1,118 @@
+.features {
+	background-color: $light-gray;
+	padding: 60px 0px 210px 0px;
+
+	&__heading {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	&__paragraph {
+		text-align: center;
+		max-width: 515px;
+		margin: auto;
+		font-size: 1.125rem;
+		font-weight: 500;
+		color: $grayish-violet;
+		line-height: 1.725;
+		margin-bottom: 95px;
+	}
+
+	.cards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 30px;
+
+		&__card {
+			background-color: $white;
+			padding: 80px 30px 40px 30px;
+			border-radius: 10px;
+			position: relative;
+
+			&::after {
+				content: "";
+				width: 100px;
+				height: 8px;
+				background-color: $cyan;
+				display: block;
+				position: absolute;
+			}
+
+			&:nth-of-type(1)::after {
+				top: 57.5%;
+				left: 100%;
+			}
+
+			&:nth-of-type(2) {
+				transform: translateY(45px);
+
+				&::after {
+					left: 100%;
+					top: 40%;
+				}
+			}
+
+			&:nth-of-type(3) {
+				transform: translateY(90px);
+
+				&::after {
+					display: none;
+				}
+			}
+		}
+
+		&__imgCircle {
+			position: absolute;
+			top: -40px;
+			background-color: $dark-violet;
+			border-radius: 50%;
+			padding: 22.5px;
+		}
+
+		&__title {
+			margin-bottom: 20px;
+		}
+
+		&__paragraph {
+			font-weight: 500;
+			color: $grayish-violet;
+			font-size: 0.955rem;
+			line-height: 1.65;
+		}
+	}
+
+	@include max(1135px) {
+		padding-bottom: 120px;
+
+		.cards {
+			grid-template-columns: 1fr;
+			max-width: 500px;
+			text-align: center;
+			margin: auto;
+
+			&__card {
+				padding: 75px 35px 40px 35px;
+				margin-bottom: 60px;
+
+				&:nth-of-type(1)::after,
+				&:nth-of-type(2)::after {
+					top: initial;
+					left: initial;
+					bottom: -80px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+
+				&::after {
+					width: 9px;
+					height: 80px;
+				}
+			}
+
+			&__imgCircle {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+}

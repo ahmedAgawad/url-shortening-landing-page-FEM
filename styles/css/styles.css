@@ -338,7 +338,7 @@ h3 {
 
 .short {
   background-color: hsl(230deg, 23%, 95%);
-  padding: 110px 0px 62.5px 0px;
+  padding: 110px 0px 60px 0px;
 }
 .short .container {
   position: relative;
@@ -545,5 +545,107 @@ h3 {
   .short__copy {
     width: 100%;
     font-size: 1rem;
+  }
+}
+
+.features {
+  background-color: hsl(230deg, 23%, 95%);
+  padding: 60px 0px 210px 0px;
+}
+.features__heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.features__paragraph {
+  text-align: center;
+  max-width: 515px;
+  margin: auto;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: hsl(257deg, 7%, 63%);
+  line-height: 1.725;
+  margin-bottom: 95px;
+}
+.features .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.features .cards__card {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 80px 30px 40px 30px;
+  border-radius: 10px;
+  position: relative;
+}
+.features .cards__card::after {
+  content: "";
+  width: 100px;
+  height: 8px;
+  background-color: hsl(180deg, 66%, 49%);
+  display: block;
+  position: absolute;
+}
+.features .cards__card:nth-of-type(1)::after {
+  top: 57.5%;
+  left: 100%;
+}
+.features .cards__card:nth-of-type(2) {
+  transform: translateY(45px);
+}
+.features .cards__card:nth-of-type(2)::after {
+  left: 100%;
+  top: 40%;
+}
+.features .cards__card:nth-of-type(3) {
+  transform: translateY(90px);
+}
+.features .cards__card:nth-of-type(3)::after {
+  display: none;
+}
+.features .cards__imgCircle {
+  position: absolute;
+  top: -40px;
+  background-color: hsl(257deg, 27%, 26%);
+  border-radius: 50%;
+  padding: 22.5px;
+}
+.features .cards__title {
+  margin-bottom: 20px;
+}
+.features .cards__paragraph {
+  font-weight: 500;
+  color: hsl(257deg, 7%, 63%);
+  font-size: 0.955rem;
+  line-height: 1.65;
+}
+@media (max-width: 1135px) {
+  .features {
+    padding-bottom: 120px;
+  }
+  .features .cards {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+  }
+  .features .cards__card {
+    padding: 75px 35px 40px 35px;
+    margin-bottom: 60px;
+  }
+  .features .cards__card:nth-of-type(1)::after, .features .cards__card:nth-of-type(2)::after {
+    top: initial;
+    left: initial;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .features .cards__card::after {
+    width: 9px;
+    height: 80px;
+  }
+  .features .cards__imgCircle {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
