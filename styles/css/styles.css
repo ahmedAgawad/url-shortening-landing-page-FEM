@@ -16,6 +16,12 @@
   align-items: center;
 }
 
+.footer__nav, .footer .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -79,7 +85,7 @@ a {
 }
 
 body {
-  font-family: "poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 h1,
@@ -685,5 +691,103 @@ h3 {
   .start__heading {
     font-size: 1.6rem;
     margin-bottom: 15px;
+  }
+}
+
+.footer {
+  background-color: hsl(260deg, 8%, 14%);
+  padding: 65px 0px 70px 0px;
+}
+.footer__list {
+  margin-right: 80px;
+  list-style: none;
+}
+.footer__list:last-of-type {
+  margin-right: 95px;
+}
+.footer__listTitle {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 600;
+  margin-bottom: 22.5px;
+}
+.footer__item {
+  margin-bottom: 12.5px;
+}
+.footer__link {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 75%);
+  font-size: 0.865rem;
+  transition: color 200ms ease-in-out;
+}
+.footer__link:hover {
+  color: hsl(178deg, 57%, 75%);
+}
+.footer .fa-brands {
+  font-size: 1.7rem;
+  margin-right: 20px;
+  display: inline-block;
+  color: hsl(0deg, 0%, 100%);
+  transition: color 200ms ease-in-out;
+}
+.footer .fa-brands:hover {
+  color: hsl(178deg, 57%, 75%);
+}
+@media (max-width: 990px) {
+  .footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .footer__logo {
+    margin-bottom: 50px;
+  }
+  .footer__nav {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer__list {
+    margin-right: 0;
+  }
+  .footer__list:last-of-type {
+    margin-right: 0px;
+  }
+  .footer__social {
+    margin-left: 0;
+  }
+}
+@media (max-width: 700px) {
+  .footer {
+    padding: 40px 0px;
+    text-align: center;
+  }
+  .footer .container {
+    align-items: center;
+  }
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__list {
+    margin-bottom: 30px;
+  }
+  .footer__list:last-of-type {
+    margin-bottom: 40px;
+  }
+  .footer__listTitle {
+    font-size: 0.875rem;
+    margin-bottom: 15px;
+  }
+  .footer__item {
+    margin-bottom: 10px;
+  }
+  .footer__link {
+    font-size: 0.795rem;
+  }
+  .footer .fa-brands {
+    font-size: 1.45rem;
+    margin-right: 12.5px;
   }
 }

@@ -1,4 +1,4 @@
-// helper classes
+// helper classes & placeholders
 .container {
 	max-width: 1163px;
 	margin: auto;
@@ -15,4 +15,10 @@
 %flex-ac {
 	display: flex;
 	align-items: center;
+}
+
+%flex-as-jsb {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
 }

@@ -1,0 +1,128 @@
+.footer {
+	background-color: $very-dark-violet;
+	padding: 65px 0px 70px 0px;
+
+	.container {
+		@extend %flex-as-jsb;
+	}
+
+	&__nav  {
+		@extend %flex-as-jsb;
+	}
+
+	&__list {
+		margin-right: 80px;
+		list-style: none;
+
+		&:last-of-type {
+			margin-right: 95px;
+		}
+	}
+
+	&__listTitle {
+		color: $white;
+		font-weight: 600;
+		margin-bottom: 22.5px;
+	}
+
+	&__item {
+		margin-bottom: 12.5px;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $gray;
+		font-size: 0.865rem;
+		transition: $color-transition;
+
+		&:hover {
+			color: $light-cyan;
+		}
+	}
+
+
+	.fa-brands {
+		font-size: 1.7rem;
+		margin-right: 20px;
+		display: inline-block;
+		color: $white;
+		transition: $color-transition;
+
+		&:hover {
+			color: $light-cyan;
+		}
+	}
+
+	@include max(990px) {
+		.container {
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+
+		&__logo {
+			margin-bottom: 50px;
+		}
+
+		&__nav {
+			justify-content: space-between;
+			width: 100%;
+		}
+
+		&__list {
+			margin-right: 0;
+
+			&:last-of-type {
+				margin-right: 0px;
+			}
+		}
+
+		&__social {
+			margin-left: 0;
+		}
+	}
+
+	@include max(700px) {
+		padding: 40px 0px;
+		text-align: center;
+
+		.container {
+			align-items: center;
+		}
+
+		&__logo {
+			margin-bottom: 40px;
+		}
+
+		&__nav {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__list {
+			margin-bottom: 30px;
+
+			&:last-of-type {
+				margin-bottom: 40px;
+			}
+		}
+
+		&__listTitle {
+			font-size: 0.875rem;
+			margin-bottom: 15px;
+		}
+
+		&__item {
+			margin-bottom: 10px;
+		}
+
+		&__link {
+			font-size: 0.795rem;
+		}
+
+		.fa-brands {
+			font-size: 1.45rem;
+			margin-right: 12.5px;
+		}
+	}
+}
