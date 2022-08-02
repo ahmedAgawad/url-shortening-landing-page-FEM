@@ -43,12 +43,12 @@ html:focus-within {
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
-  overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */
@@ -130,6 +130,12 @@ h3 {
   .btn-getStarted {
     height: 50px;
     font-size: 1.1rem;
+  }
+}
+@media (max-width: 400px) {
+  .btn-getStarted {
+    width: 160px;
+    font-size: 0.975rem;
   }
 }
 /* header */
@@ -647,5 +653,37 @@ h3 {
   .features .cards__imgCircle {
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+@media (max-width: 550px) {
+  .features__heading {
+    font-size: 1.725rem;
+  }
+  .features__paragraph {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+}
+
+.start {
+  text-align: center;
+  background-color: hsl(257deg, 27%, 26%);
+  background-image: url("../../../images/bg-boost-desktop.svg");
+  background-size: cover;
+  padding: 60px 0px 56.5px 0px;
+}
+.start__heading {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 25px;
+  letter-spacing: 0.25px;
+}
+@media (max-width: 600px) {
+  .start {
+    background-image: url("../../../images/bg-boost-mobile.svg");
+    padding: 95px 0px 90px 0px;
+  }
+  .start__heading {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
   }
 }

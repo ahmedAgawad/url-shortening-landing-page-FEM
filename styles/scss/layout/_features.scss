@@ -83,7 +83,7 @@
 
 	@include max(1135px) {
 		padding-bottom: 120px;
-
+		
 		.cards {
 			grid-template-columns: 1fr;
 			max-width: 500px;
@@ -113,6 +113,17 @@
 				left: 50%;
 				transform: translateX(-50%);
 			}
+		}
+	}
+
+	@include max(550px) {
+		&__heading {
+			font-size: 1.725rem;
+		}
+
+		&__paragraph {
+			font-size: 1.05rem;
+			line-height: 1.6;
 		}
 	}
 }

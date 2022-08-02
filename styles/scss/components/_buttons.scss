@@ -32,3 +32,9 @@
 	}
 }
 
+@include max(400px) {
+	.btn-getStarted {
+		width: 160px;
+		font-size: 0.975rem;
+	}
+}

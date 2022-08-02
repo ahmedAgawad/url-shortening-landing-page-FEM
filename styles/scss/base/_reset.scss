@@ -25,12 +25,12 @@ html:focus-within {
 html,
 body {
 	height: 100%;
+	overflow-x: hidden;
 }
 
 /* Set core body defaults */
 body {
 	text-rendering: optimizeSpeed;
-	overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */

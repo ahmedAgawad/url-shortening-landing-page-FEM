@@ -1,0 +1,23 @@
+.start {
+	text-align: center;
+	background-color: $dark-violet;
+	background-image: url("../../../images/bg-boost-desktop.svg");
+	background-size: cover;
+	padding: 60px 0px 56.5px 0px;
+
+	&__heading {
+		color: $white;
+		margin-bottom: 25px;
+		letter-spacing: 0.25px;
+	}
+
+	@include max(600px) {
+		background-image: url("../../../images/bg-boost-mobile.svg");
+		padding: 95px 0px 90px 0px;
+
+		&__heading {
+			font-size: 1.6rem;
+			margin-bottom: 15px;
+		}
+	}
+}
