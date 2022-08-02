@@ -48,7 +48,6 @@ html:focus-within {
 
 html,
 body {
-  height: 100%;
   overflow-x: hidden;
 }
 
@@ -94,7 +93,7 @@ h2 {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 5.155rem;
   line-height: 1.1;
   letter-spacing: -3px;
 }
@@ -105,7 +104,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3125rem;
+  font-size: 1.4125rem;
 }
 
 .btn {
@@ -149,7 +148,9 @@ h3 {
   padding: 48px 0px 40px 0px;
 }
 .header__logo {
-  margin-right: 47.5px;
+  margin-right: 44.5px;
+  transform: translateY(3px);
+  margin-left: 3px;
 }
 .header__hamburgerBtn {
   display: none;
@@ -178,7 +179,7 @@ h3 {
   color: hsl(257deg, 27%, 26%);
 }
 .header__link--login {
-  margin-right: 36px;
+  margin-right: 36.75px;
 }
 .header__signup {
   width: 106px;
@@ -255,29 +256,29 @@ h3 {
 
 /* hero */
 .hero {
-  padding: 40px 0px 150px 0px;
+  padding: 35px 0px 153px 0px;
 }
 .hero .container {
   position: relative;
   min-height: 480px;
 }
 .hero__text {
-  max-width: 560px;
+  max-width: 580px;
 }
 .hero__heading {
-  margin-bottom: 5px;
+  margin-bottom: 2.75px;
 }
 .hero__paragraph {
   color: hsl(257deg, 7%, 63%);
-  font-size: 1.325rem;
+  font-size: 1.395rem;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 .hero__background {
   max-height: 480px;
   position: absolute;
   top: 0;
-  right: -275px;
+  right: -262.5px;
 }
 .hero__img {
   max-width: initial;
@@ -562,11 +563,13 @@ h3 {
 
 .features {
   background-color: hsl(230deg, 23%, 95%);
-  padding: 60px 0px 210px 0px;
+  padding: 36.5px 0px 210px 0px;
 }
 .features__heading {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
+  font-size: 2.375rem;
+  letter-spacing: 0px;
 }
 .features__paragraph {
   text-align: center;
@@ -586,7 +589,7 @@ h3 {
 }
 .features .cards__card {
   background-color: hsl(0deg, 0%, 100%);
-  padding: 80px 30px 40px 30px;
+  padding: 78.5px 30px 40px 31.75px;
   border-radius: 10px;
   position: relative;
 }
@@ -599,7 +602,7 @@ h3 {
   position: absolute;
 }
 .features .cards__card:nth-of-type(1)::after {
-  top: 57.5%;
+  top: 58.5%;
   left: 100%;
 }
 .features .cards__card:nth-of-type(2) {
@@ -607,7 +610,7 @@ h3 {
 }
 .features .cards__card:nth-of-type(2)::after {
   left: 100%;
-  top: 40%;
+  top: 41%;
 }
 .features .cards__card:nth-of-type(3) {
   transform: translateY(90px);
@@ -615,15 +618,18 @@ h3 {
 .features .cards__card:nth-of-type(3)::after {
   display: none;
 }
+.features .cards__card:nth-of-type(3) .cards__imgCircle {
+  padding: 20px;
+}
 .features .cards__imgCircle {
   position: absolute;
   top: -40px;
   background-color: hsl(257deg, 27%, 26%);
   border-radius: 50%;
-  padding: 22.5px;
+  padding: 24.75px;
 }
 .features .cards__title {
-  margin-bottom: 20px;
+  margin-bottom: 17.5px;
 }
 .features .cards__paragraph {
   font-weight: 500;
@@ -676,12 +682,13 @@ h3 {
   background-color: hsl(257deg, 27%, 26%);
   background-image: url("../../../images/bg-boost-desktop.svg");
   background-size: cover;
-  padding: 60px 0px 56.5px 0px;
+  padding: 57.5px 0px 56.5px 0px;
 }
 .start__heading {
   color: hsl(0deg, 0%, 100%);
-  margin-bottom: 25px;
+  margin-bottom: 23.5px;
   letter-spacing: 0.25px;
+  font-size: 2.35rem;
 }
 @media (max-width: 600px) {
   .start {
@@ -696,27 +703,35 @@ h3 {
 
 .footer {
   background-color: hsl(260deg, 8%, 14%);
-  padding: 65px 0px 70px 0px;
+  padding: 71px 0px 70px 0px;
 }
 .footer__list {
-  margin-right: 80px;
   list-style: none;
 }
+.footer__list:nth-of-type(1) {
+  margin-right: 85px;
+}
+.footer__list:nth-of-type(2) {
+  margin-right: 105px;
+}
+.footer__list:nth-of-type(3) {
+  margin-right: 97px;
+}
 .footer__list:last-of-type {
-  margin-right: 95px;
+  margin-right: 97.5px;
 }
 .footer__listTitle {
   color: hsl(0deg, 0%, 100%);
   font-weight: 600;
-  margin-bottom: 22.5px;
+  margin-bottom: 20px;
 }
 .footer__item {
-  margin-bottom: 12.5px;
+  margin-bottom: 7.85px;
 }
 .footer__link {
   text-decoration: none;
   color: hsl(0deg, 0%, 75%);
-  font-size: 0.865rem;
+  font-size: 0.9rem;
   transition: color 200ms ease-in-out;
 }
 .footer__link:hover {
@@ -731,6 +746,9 @@ h3 {
 }
 .footer .fa-brands:hover {
   color: hsl(178deg, 57%, 75%);
+}
+.footer .lastIcon {
+  margin-right: 0;
 }
 @media (max-width: 990px) {
   .footer .container {
@@ -748,14 +766,15 @@ h3 {
   .footer__list {
     margin-right: 0;
   }
-  .footer__list:last-of-type {
-    margin-right: 0px;
-  }
   .footer__social {
     margin-left: 0;
   }
+  .footer .fa-brands {
+    margin-right: 6.5px;
+    font-size: 1.5rem;
+  }
 }
-@media (max-width: 700px) {
+@media (max-width: 740px) {
   .footer {
     padding: 40px 0px;
     text-align: center;
@@ -773,8 +792,12 @@ h3 {
   .footer__list {
     margin-bottom: 30px;
   }
+  .footer__list:nth-of-type(1), .footer__list:nth-of-type(2) {
+    margin-right: 0;
+  }
   .footer__list:last-of-type {
     margin-bottom: 40px;
+    margin-right: 0px;
   }
   .footer__listTitle {
     font-size: 0.875rem;

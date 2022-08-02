@@ -3,12 +3,13 @@
 	background-color: $dark-violet;
 	background-image: url("../../../images/bg-boost-desktop.svg");
 	background-size: cover;
-	padding: 60px 0px 56.5px 0px;
+	padding: 57.5px 0px 56.5px 0px;
 
 	&__heading {
 		color: $white;
-		margin-bottom: 25px;
+		margin-bottom: 23.5px;
 		letter-spacing: 0.25px;
+		font-size: 2.35rem;
 	}
 
 	@include max(600px) {

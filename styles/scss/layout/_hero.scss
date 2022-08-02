@@ -1,6 +1,6 @@
 /* hero */
 .hero {
-	padding: 40px 0px 150px 0px;
+	padding: 35px 0px 153px 0px;
 
 	.container {
 		@extend %flex-ac-jsb;
@@ -9,25 +9,25 @@
 	}
 
 	&__text {
-		max-width: 560px;
+		max-width: 580px;
 	}
 
 	&__heading {
-		margin-bottom: 5px;
+		margin-bottom: 2.75px;
 	}
 
 	&__paragraph {
 		color: $grayish-violet;
-		font-size: 1.325rem;
+		font-size: 1.395rem;
 		line-height: 1.6;
-		margin-bottom: 30px;
+		margin-bottom: 32px;
 	}
 
 	&__background {
 		max-height: 480px;
 		position: absolute;
 		top: 0;
-		right: -275px;
+		right: -262.5px;
 	}
 
 	&__img {
@@ -94,8 +94,7 @@
 		&__paragraph {
 			font-size: 1rem;
 			margin-bottom: 15px;
-		} 
-
+		}
 
 		&__background {
 			position: relative;

@@ -1,45 +1,55 @@
 .footer {
 	background-color: $very-dark-violet;
-	padding: 65px 0px 70px 0px;
+	padding: 71px 0px 70px 0px;
 
 	.container {
 		@extend %flex-as-jsb;
 	}
 
-	&__nav  {
+	&__nav {
 		@extend %flex-as-jsb;
 	}
 
 	&__list {
-		margin-right: 80px;
 		list-style: none;
 
+		&:nth-of-type(1) {
+			margin-right: 85px;
+		}
+
+		&:nth-of-type(2) {
+			margin-right: 105px;
+		}
+
+		&:nth-of-type(3) {
+			margin-right: 97px;
+		}
+
 		&:last-of-type {
-			margin-right: 95px;
+			margin-right: 97.5px;
 		}
 	}
 
 	&__listTitle {
 		color: $white;
 		font-weight: 600;
-		margin-bottom: 22.5px;
+		margin-bottom: 20px;
 	}
 
 	&__item {
-		margin-bottom: 12.5px;
+		margin-bottom: 7.85px;
 	}
 
 	&__link {
 		text-decoration: none;
 		color: $gray;
-		font-size: 0.865rem;
+		font-size: 0.9rem;
 		transition: $color-transition;
 
 		&:hover {
 			color: $light-cyan;
 		}
 	}
-
 
 	.fa-brands {
 		font-size: 1.7rem;
@@ -51,6 +61,10 @@
 		&:hover {
 			color: $light-cyan;
 		}
+	}
+
+	.lastIcon {
+		margin-right: 0;
 	}
 
 	@include max(990px) {
@@ -71,18 +85,19 @@
 
 		&__list {
 			margin-right: 0;
-
-			&:last-of-type {
-				margin-right: 0px;
-			}
 		}
 
 		&__social {
 			margin-left: 0;
 		}
+
+		.fa-brands {
+			margin-right: 6.5px;
+			font-size: 1.5rem;
+		}
 	}
 
-	@include max(700px) {
+	@include max(740px) {
 		padding: 40px 0px;
 		text-align: center;
 
@@ -102,8 +117,13 @@
 		&__list {
 			margin-bottom: 30px;
 
+			&:nth-of-type(1), &:nth-of-type(2) {
+				margin-right: 0;
+			}
+
 			&:last-of-type {
 				margin-bottom: 40px;
+				margin-right: 0px;
 			}
 		}
 

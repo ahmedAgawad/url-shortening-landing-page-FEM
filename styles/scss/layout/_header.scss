@@ -7,7 +7,9 @@
 	}
 
 	&__logo {
-		margin-right: 47.5px;
+		margin-right: 44.5px;
+		transform: translateY(3px);
+		margin-left: 3px;
 	}
 
 	&__hamburgerBtn {
@@ -44,7 +46,7 @@
 		}
 
 		&--login {
-			margin-right: 36px;
+			margin-right: 36.75px;
 		}
 	}
 
@@ -132,5 +134,4 @@
 			width: 100%;
 		}
 	}
-
 }
