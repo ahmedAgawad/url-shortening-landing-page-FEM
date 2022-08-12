@@ -75,6 +75,11 @@
 		font-size: 1.2rem;
 	}
 
+	&__links {
+		max-height: 410px;
+		overflow-y: auto;
+	}
+
 	&__link {
 		background-color: $white;
 		@extend %flex-ac-jsb;
@@ -209,8 +214,11 @@
 		}
 
 		&__error {
-			bottom: 88.5px;
-			font-size: 0.895rem;
+			bottom: 71.5px;
+			font-size: 0.855rem;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
 		}
 
 		&__submit {

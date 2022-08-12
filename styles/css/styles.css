@@ -423,6 +423,10 @@ h3 {
   border-radius: 11px;
   font-size: 1.2rem;
 }
+.short__links {
+  max-height: 410px;
+  overflow-y: auto;
+}
 .short__link {
   background-color: hsl(0deg, 0%, 100%);
   padding: 15px 25px 14.5px 30px;
@@ -530,8 +534,11 @@ h3 {
     font-size: 1rem;
   }
   .short__error {
-    bottom: 88.5px;
-    font-size: 0.895rem;
+    bottom: 71.5px;
+    font-size: 0.855rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .short__submit {
     font-size: 0.975rem;
